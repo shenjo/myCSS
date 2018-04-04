@@ -1,0 +1,40 @@
+.container {
+    width: 500px;
+    margin: auto;
+    border: 1px solid;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    position:relative;
+    padding: 20px;
+    display: inline-block;
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #000;
+    transition: 0.2s all linear;
+}
+
+ul li:hover:before {
+    left:0;
+    width: 100%;
+}
+
+li:hover ~ li::before {
+
+    left: 0;
+
+}
+
+
