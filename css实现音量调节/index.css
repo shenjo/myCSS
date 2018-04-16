@@ -1,0 +1,77 @@
+.container {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    border: 1px solid blue;
+}
+
+.voice-wrapper-bar {
+    background-color: #447b70;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 100%;
+}
+
+.voice {
+    position: absolute;
+    width: 140px;
+    height: 10px;
+    top: 70px;
+    margin: 0;
+    border-radius: 10px;
+    transform: translate(-50px) rotate(270deg);
+    background: transparent;
+}
+
+/** 以上css已经能work啦，下面的是改input-range的默认样式 */
+
+/** 去掉用户代理默认样式*/
+
+input[type=range] {
+    -webkit-appearance: none; /**chrome default是 slider-horizontal*/
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*-webkit-appearance: none;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*cursor: pointer;*/
+}
+
+/**改滑块样式 */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.inactive-background{
+    background-color: #324a45;
+    top: 5px;
+    height:140px;
+}
+
+
+.inactive-background,.active-background{
+    position: absolute;
+    width: 10px;
+    margin: 0;
+    border-radius: 5px;
+    left: 15px;
+}
+.active-background {
+    background-color: #5fd4b8;
+    bottom: 5px;
+    height: 50%;
+}

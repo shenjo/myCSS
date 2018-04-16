@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="container">
+    <div class="voice-wrapper-bar">
+        <div class="inactive-background"></div>
+        <div class="active-background"></div>
+        <input type="range" class="voice" oninput="changeActiveBackgroundHeight()">
+    </div>
+    定位元素
+</div>
+<script>
+    const changeActiveBackgroundHeight = ()=>{
+        const current = document.querySelector('input[type=range]').value;
+        document.querySelector('div[class=active-background]').style.height=`${140/100*current}px`;
+    }
+</script>
+</body>
+</html>
