@@ -32,9 +32,7 @@ ul li:hover:before {
 }
 
 li:hover ~ li::before {
-
     left: 0;
-
 }
 
 
