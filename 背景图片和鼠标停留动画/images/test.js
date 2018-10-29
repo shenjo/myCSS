@@ -11,7 +11,7 @@ const names = ['dog', 'elephant', 'lion', 'panda', 'penguin', 'rabbit', 'wolf'];
         return sharp(`${name}.jpeg`)
             .resize(width, height)
             .toFile(`${name}_temp.jpeg`);
-    }))
+    }));
     // 删除原来的图片
     names.forEach(name => fs.unlinkSync(`./${name}.jpeg`));
     // resize的图片重命名
