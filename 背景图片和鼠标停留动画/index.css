@@ -1,0 +1,57 @@
+/* 第一种方式样式 */
+
+#all-images-cntr-1 {
+    display: flex;
+}
+
+#all-images-cntr-1 .image {
+    width: 100%;
+    height: 100%;
+}
+
+#all-images-cntr-1 .dog {
+    background: url("./images/dog.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .elephant {
+    background: url("./images/elephant.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .lion {
+    background: url("./images/lion.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .panda {
+    background: url("./images/panda.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .penguin {
+    background: url("./images/penguin.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .rabbit {
+    background: url("./images/rabbit.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .wolf {
+    background: url("./images/wolf.jpeg") no-repeat center top;
+    background-size: 100%;
+}
+
+#all-images-cntr-1 .dynamic-width{
+    width: calc(100% / 7);
+    height:200px;
+    transition: width 0.5s;
+}
+
+#all-images-cntr-1 .dynamic-width:hover{
+    /*transform: ;*/
+    width: calc(100% / 2);
+    height: 300px;
+}
